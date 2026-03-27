@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart — VESTIS</title>
+  <meta name="description" content="Review your shopping cart at VESTIS.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+
+  <!-- ══ NAVBAR ════════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">VES<span>T</span>IS</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
+          <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-badge" style="display:none">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+      <a href="cart.html"     class="nav-link">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cart-page">
+      <div class="container">
+
+        <h1 class="fade-in">Shopping Cart</h1>
+        <p class="cart-count-label" id="cartCountLabel">0 items in your cart</p>
+
+        <div class="cart-layout">
+          <!-- Cart Items Column -->
+          <div id="cartContainer">
+            <!-- Populated by JavaScript -->
+          </div>
+
+          <!-- Order Summary -->
+          <aside class="order-summary" aria-label="Order summary">
+            <h2 class="summary-title">Order Summary</h2>
+
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <span id="summarySubtotal">$0.00</span>
+            </div>
+            <div class="summary-line">
+              <span>Shipping</span>
+              <span id="summaryShipping">$12.00</span>
+            </div>
+            <div class="summary-line" style="color:var(--gold);font-size:0.75rem;">
+              <span>✓ Free shipping on orders over $150</span>
+            </div>
+            <div class="summary-line total">
+              <span>Total</span>
+              <span id="summaryTotal">$0.00</span>
+            </div>
+
+            <!-- Promo Code -->
+            <div class="promo-row">
+              <input type="text" id="promoInput" placeholder="Promo code (try VESTIS10)" aria-label="Promo code">
+              <button class="btn btn-outline" id="promoBtn" style="padding:10px 16px;font-size:0.62rem">Apply</button>
+            </div>
+
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+              Proceed to Checkout →
+            </button>
+
+            <div style="margin-top:16px;text-align:center">
+              <a href="products.html" style="font-size:0.72rem;color:var(--mid);text-decoration:underline;letter-spacing:0.04em">
+                ← Continue Shopping
+              </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--beige)">
+              <p style="font-size:0.65rem;color:var(--light);text-align:center;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">Secure Checkout</p>
+              <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">
+                <span style="background:var(--beige);padding:5px 10px;font-size:0.62rem;font-weight:600;letter-spacing:0.08em;color:var(--mid)">VISA</span>
+                <span style="background:var(--beige);padding:5px 10px;font-size:0.62rem;font-weight:600;letter-spacing:0.08em;color:var(--mid)">MASTERCARD</span>
+                <span style="background:var(--beige);padding:5px 10px;font-size:0.62rem;font-weight:600;letter-spacing:0.08em;color:var(--mid)">PAYPAL</span>
+                <span style="background:var(--beige);padding:5px 10px;font-size:0.62rem;font-weight:600;letter-spacing:0.08em;color:var(--mid)">APPLE PAY</span>
+              </div>
+            </div>
+          </aside>
+        </div><!-- /.cart-layout -->
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">VES<span>T</span>IS</span>
+          <p>Considered fashion for the modern wardrobe.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul class="footer-links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?filter=men">Men</a></li>
+            <li><a href="products.html?filter=women">Women</a></li>
+            <li><a href="products.html?filter=new">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Help</p>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Newsletter</p>
+          <form class="footer-newsletter" id="footerNewsletter">
+            <input type="email" placeholder="Email address" aria-label="Email for newsletter">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 VESTIS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

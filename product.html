@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product — VESTIS</title>
+  <meta name="description" content="View product details at VESTIS.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="product">
+
+  <!-- ══ NAVBAR ════════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">VES<span>T</span>IS</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
+          <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-badge" style="display:none">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+      <a href="cart.html"     class="nav-link">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-detail">
+      <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="products.html">Products</a>
+          <span>›</span>
+          <span id="breadcrumbProduct">Product</span>
+        </nav>
+
+        <!-- Product Grid -->
+        <div class="product-detail-grid">
+
+          <!-- Gallery -->
+          <div class="product-gallery" aria-label="Product images">
+            <div class="gallery-main" id="galleryMain">
+              <img id="mainImage" src="" alt="Product image">
+            </div>
+            <div class="gallery-thumbs" id="galleryThumbs">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-info fade-in">
+            <span class="section-label" id="productCategory">Category</span>
+            <h1 id="productName">Loading…</h1>
+            <p class="product-sku" id="productSku"></p>
+
+            <!-- Rating -->
+            <div class="product-rating" id="productRating">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Price -->
+            <div class="product-price-display" id="productPrice">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Description -->
+            <p class="product-description" id="productDescription"></p>
+
+            <!-- Size Selection -->
+            <div class="size-section">
+              <div class="size-label">
+                <span>Select Size</span>
+                <span class="size-guide">Size Guide</span>
+              </div>
+              <div class="size-options" id="sizeOptions">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="qty-section">
+              <span class="qty-label">Quantity</span>
+              <div class="qty-control">
+                <button class="qty-btn" id="qtyMinus" aria-label="Decrease quantity">−</button>
+                <input class="qty-display" id="qtyDisplay" type="text" value="1" readonly aria-label="Quantity">
+                <button class="qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="product-cta">
+              <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+              <button class="btn btn-outline" id="buyNowBtn">Buy Now</button>
+            </div>
+
+            <!-- Product Meta -->
+            <div class="product-meta">
+              <div class="meta-item">
+                <svg class="meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+                <span>Free delivery on orders over $150</span>
+              </div>
+              <div class="meta-item">
+                <svg class="meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="1 4 1 10 7 10"/>
+                  <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+                </svg>
+                <span>Easy 30-day returns & exchanges</span>
+              </div>
+              <div class="meta-item">
+                <svg class="meta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>Sustainably and ethically sourced</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.product-detail-grid -->
+
+      </div>
+    </div>
+
+    <!-- ── You May Also Like ────────────────────────────── -->
+    <section class="section" style="padding-top:0;border-top:1px solid var(--beige)">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-text">
+            <span class="section-label">Discover More</span>
+            <h2>You May Also Like</h2>
+          </div>
+          <a href="products.html" class="btn btn-outline">View All</a>
+        </div>
+        <div class="products-grid" id="relatedGrid">
+          <!-- Populated inline below -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">VES<span>T</span>IS</span>
+          <p>Considered fashion for the modern wardrobe.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul class="footer-links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?filter=men">Men</a></li>
+            <li><a href="products.html?filter=women">Women</a></li>
+            <li><a href="products.html?filter=new">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Help</p>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Newsletter</p>
+          <form class="footer-newsletter" id="footerNewsletter">
+            <input type="email" placeholder="Email address" aria-label="Email for newsletter">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 VESTIS. All rights reserved.</p>
+        <div style="display:flex;gap:24px">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Render related products (first 4 that are not current)
+    document.addEventListener('DOMContentLoaded', () => {
+      const params  = new URLSearchParams(window.location.search);
+      const id      = parseInt(params.get('id'));
+      const related = PRODUCTS.filter(p => p.id !== id).slice(0, 4);
+      const grid    = document.getElementById('relatedGrid');
+      if (grid) {
+        grid.innerHTML = related.map(buildProductCard).join('');
+        grid.querySelectorAll('.quick-add').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.preventDefault();
+            const pid = parseInt(btn.dataset.id);
+            const product = PRODUCTS.find(p => p.id === pid);
+            Cart.add(pid, product.sizes[1] || product.sizes[0]);
+            showToast(`${product.name} added to cart`);
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — VESTIS</title>
+  <meta name="description" content="The story behind VESTIS — a fashion brand built on considered design and sustainable practice.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+
+  <!-- ══ NAVBAR ════════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">VES<span>T</span>IS</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="nav-cart" aria-label="Shopping cart">
+          <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-badge" style="display:none">0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+      <a href="cart.html"     class="nav-link">Cart</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══════════════════════════════════════════════ -->
+    <section class="about-hero" aria-label="About hero">
+      <div class="about-hero-bg">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=80"
+             alt="Fashion editorial" loading="eager">
+      </div>
+      <div class="about-hero-content">
+        <h1>Clothing that<br><em>endures</em></h1>
+        <p>We believe in the quiet power of a well-made piece. VESTIS was founded to bring considered, long-lasting fashion to the modern wardrobe.</p>
+      </div>
+    </section>
+
+    <!-- ══ OUR STORY ═════════════════════════════════════════ -->
+    <section class="about-story section">
+      <div class="container">
+        <div class="about-story-grid">
+          <div class="about-story-img">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
+                 alt="Our atelier" loading="lazy">
+          </div>
+          <div class="about-story-text">
+            <span class="section-label">Our Story</span>
+            <h2>Born from a love of craft</h2>
+            <p>VESTIS began in a small studio in Copenhagen in 2018. Founder Elena Marsh had grown frustrated with fashion's disposability — the constant churn of trends, the poor construction, the lack of honesty about where things came from and who made them.</p>
+            <p>She set out to build a brand that operated differently. One that started with exceptional fabrics, worked with skilled artisans, and charged a fair price for something genuinely worth owning.</p>
+            <p>Seven years later, we ship to 42 countries. Our core principles haven't changed: source honestly, make well, and design for permanence over trend.</p>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <p class="stat-number">42</p>
+                <p class="stat-label">Countries served</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-number">40K+</p>
+                <p class="stat-label">Happy customers</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-number">98%</p>
+                <p class="stat-label">Satisfaction rate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PROCESS ════════════════════════════════════════════ -->
+    <section style="padding:0 0 96px;background:var(--white)">
+      <div class="container">
+        <div class="about-story-grid" style="align-items:center">
+          <div class="about-story-text">
+            <span class="section-label">How We Make Things</span>
+            <h2>Every seam has a story</h2>
+            <p>We work with a tight network of family-owned mills in Portugal, Japan, and Belgium. Each fabric is tested for durability, texture, and how it ages — because we want our clothes to become more themselves over time, not less.</p>
+            <p>Our production runs are deliberately small. We make enough to meet demand, never to fill a warehouse. This lets us maintain quality at every step and avoid the landfill problem that plagues fast fashion.</p>
+            <p>Each garment is inspected by hand before it leaves the workshop. If it doesn't meet our standards, it goes back.</p>
+          </div>
+          <div class="about-story-img">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80"
+                 alt="Fabric production" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ VALUES ═════════════════════════════════════════════ -->
+    <section class="values-section" aria-labelledby="values-heading">
+      <div class="container">
+        <div style="text-align:center;max-width:480px;margin:0 auto">
+          <span class="section-label" style="justify-content:center;display:flex">What we stand for</span>
+          <h2 id="values-heading">Our Values</h2>
+          <p style="color:var(--mid);font-size:0.88rem;margin-top:12px;line-height:1.7">
+            Three principles that guide every decision we make, from fabric sourcing to packaging.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <!-- Leaf icon -->
+            <svg class="value-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
+            </svg>
+            <h3>Sustainability</h3>
+            <p>All our fabrics are certified organic, recycled, or responsibly sourced. We offset 100% of our shipping emissions and use compostable packaging throughout.</p>
+          </div>
+
+          <div class="value-card">
+            <!-- Star icon -->
+            <svg class="value-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <h3>Craftsmanship</h3>
+            <p>We partner with master artisans who have spent decades perfecting their skills. Every stitch, cut, and finish reflects a standard that machine production simply cannot replicate.</p>
+          </div>
+
+          <div class="value-card">
+            <!-- Heart icon -->
+            <svg class="value-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+            <h3>Transparency</h3>
+            <p>We publish the names and locations of every factory we work with. You can see the full cost breakdown of every item. We believe you deserve to know where your money goes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ════════════════════════════════════════════════ -->
+    <section style="padding:96px 0;text-align:center;background:var(--black)">
+      <div class="container">
+        <span class="section-label" style="color:var(--tan);display:block;text-align:center;margin-bottom:16px">Ready to begin?</span>
+        <h2 style="color:var(--white);margin-bottom:16px">Shop the Collection</h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.88rem;max-width:380px;margin:0 auto 36px;line-height:1.7">
+          Every piece is made to last. Start building your considered wardrobe today.
+        </p>
+        <a href="products.html" class="btn btn-ghost">Explore Products</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">VES<span>T</span>IS</span>
+          <p>Considered fashion for the modern wardrobe. Quality materials, honest prices, timeless design.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Shop</p>
+          <ul class="footer-links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?filter=men">Men</a></li>
+            <li><a href="products.html?filter=women">Women</a></li>
+            <li><a href="products.html?filter=new">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Company</p>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Newsletter</p>
+          <form class="footer-newsletter" id="footerNewsletter">
+            <input type="email" placeholder="Email address" aria-label="Email for newsletter">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 VESTIS. All rights reserved.</p>
+        <div style="display:flex;gap:24px">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
