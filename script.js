@@ -15,10 +15,7 @@ const PRODUCTS = [
     originalPrice: null,
     badge: 'New',
     description: 'Crafted from 100% premium Belgian linen, this oversized shirt drapes beautifully and softens with every wash. A wardrobe cornerstone designed for effortless elegance.',
-    images: [
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=700&q=80',
-      'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=700&q=80',
-      'https://images.unsplash.com/photo-1602810316693-3667c854239a?w=700&q=80'
+    images: [ hoddie.jpg
     ],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     unavailableSizes: [],
