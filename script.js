@@ -11,7 +11,7 @@ const PRODUCTS = [
     id: 1,
     name: 'Oversized Linen Shirt',
     category: 'men',
-    price: 89,
+    price: 890,
     originalPrice: null,
     badge: 'New',
     description: 'Crafted from 100% premium Belgian linen, this oversized shirt drapes beautifully and softens with every wash. A wardrobe cornerstone designed for effortless elegance.',
